@@ -639,6 +639,26 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-\[10px\]{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mx-\[\]{
+  margin-left: ;
+  margin-right: ;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mx-\[auto\]{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -700,6 +720,22 @@ video {
   height: 70px;
 }
 
+.h-\[350px\]{
+  height: 350px;
+}
+
+.h-\[300px\]{
+  height: 300px;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-\[220px\]{
+  height: 220px;
+}
+
 .max-h-\[8\.5vh\]{
   max-height: 8.5vh;
 }
@@ -718,6 +754,14 @@ video {
   min-height: fit-content;
 }
 
+.min-h-\[250px\]{
+  min-height: 250px;
+}
+
+.min-h-\[70px\]{
+  min-height: 70px;
+}
+
 .w-\[120px\]{
   width: 120px;
 }
@@ -728,6 +772,22 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[2\]{
+  width: 2;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[250px\]{
+  width: 250px;
 }
 
 .cursor-pointer{
@@ -746,6 +806,26 @@ video {
 
 .grid-cols-\[1fr\]{
   grid-template-columns: 1fr;
+}
+
+.grid-cols-\[\]{
+  grid-template-columns: ;
+}
+
+.grid-cols-\[140px\]{
+  grid-template-columns: 140px;
+}
+
+.grid-cols-\[140px\2c 1fr\]{
+  grid-template-columns: 140px 1fr;
+}
+
+.grid-cols-\[160px\2c 1fr\]{
+  grid-template-columns: 160px 1fr;
+}
+
+.grid-cols-\[1601fr\]{
+  grid-template-columns: 1601fr;
 }
 
 .flex-col{
@@ -812,6 +892,11 @@ video {
   border-color: rgb(191 219 254 / var(--tw-border-opacity, 1));
 }
 
+.border-red-900{
+  --tw-border-opacity: 1;
+  border-color: rgb(127 29 29 / var(--tw-border-opacity, 1));
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -830,6 +915,14 @@ video {
 .object-top{
   -o-object-position: top;
      object-position: top;
+}
+
+.p-\[20px\]{
+  padding: 20px;
+}
+
+.p-\[10px\]{
+  padding: 10px;
 }
 
 .px-\[10px\]{
@@ -874,6 +967,26 @@ video {
 
 .pl-\[20vw\]{
   padding-left: 20vw;
+}
+
+.pb-\[20px\]{
+  padding-bottom: 20px;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pb-\[10px\]{
+  padding-bottom: 10px;
+}
+
+.pb-\[\]{
+  padding-bottom: ;
+}
+
+.pb-\[3px\]{
+  padding-bottom: 3px;
 }
 
 .text-center{
@@ -1182,8 +1295,64 @@ a {
 }
 
 @media (min-width: 640px){
+  .sm\:grid{
+    display: grid;
+  }
+
+  .sm\:h-\[180px\]{
+    height: 180px;
+  }
+
+  .sm\:h-full{
+    height: 100%;
+  }
+
+  .sm\:h-\[\]{
+    height: ;
+  }
+
+  .sm\:h-\[160\]{
+    height: 160;
+  }
+
+  .sm\:h-\[160px\]{
+    height: 160px;
+  }
+
+  .sm\:min-h-\[\]{
+    min-height: ;
+  }
+
+  .sm\:min-h-\[180px\]{
+    min-height: 180px;
+  }
+
+  .sm\:w-full{
+    width: 100%;
+  }
+
   .sm\:grid-cols-\[1fr\2c 1fr\]{
     grid-template-columns: 1fr 1fr;
+  }
+
+  .sm\:grid-cols-\[160px\2c 1fr\]{
+    grid-template-columns: 160px 1fr;
+  }
+
+  .sm\:grid-cols-\[1fr\]{
+    grid-template-columns: 1fr;
+  }
+
+  .sm\:grid-cols-\[140px\2c 1fr\]{
+    grid-template-columns: 140px 1fr;
+  }
+
+  .sm\:p-\[10px\]{
+    padding: 10px;
+  }
+
+  .sm\:p-\[20px\]{
+    padding: 20px;
   }
 }
 
@@ -1222,6 +1391,18 @@ a {
     width: fit-content;
   }
 
+  .md\:grid-cols-\[1fr\]{
+    grid-template-columns: 1fr;
+  }
+
+  .md\:grid-cols-\[1fr\2c qfr\]{
+    grid-template-columns: 1fr qfr;
+  }
+
+  .md\:grid-cols-\[1fr\2c 1fr\]{
+    grid-template-columns: 1fr 1fr;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1232,6 +1413,11 @@ a {
 
   .md\:items-center{
     align-items: center;
+  }
+
+  .md\:bg-red-400{
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
   }
 
   .md\:p-\[20px\]{
@@ -1293,6 +1479,14 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .lg\:grid-cols-\[1fr\2c 1fr\2c 1fr\2c 1fr\]{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .lg\:grid-cols-\[1fr\2c 1fr\]{
+    grid-template-columns: 1fr 1fr;
+  }
+
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1300,6 +1494,14 @@ a {
 }
 
 @media (min-width: 1280px){
+  .xl\:grid-cols-\[1fr\]{
+    grid-template-columns: 1fr;
+  }
+
+  .xl\:grid-cols-\[1fr\2c 1fr\2c 1fr\2c 1fr\]{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .xl\:px-\[40px\]{
     padding-left: 40px;
     padding-right: 40px;
