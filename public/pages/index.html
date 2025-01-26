@@ -12,7 +12,7 @@
     <!-- styles -->
     <title>Albayan Academy | Home</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden h-[100000px]">
     <!-- navbar -->
     <nav
       class="flex items-center justify-between px-[20px] xl:px-[40px] 2xl:px-[100px] max-h-[8.5vh] h-[8.5vh] w-full overflow-hidden"
@@ -66,7 +66,7 @@
             >Sign up</a
           >
         </li>
-        <li class="mt-4">
+        <li class="mt-4 md:mt-0">
           <a
             class="font-AvertaCY py-[7px] px-[20px] text-xl md:text-sm border border-[var(--accent-color)] hover:text-white hover:bg-[var(--accent-color)] rounded-full transition"
             href="./login.html"
@@ -95,7 +95,9 @@
         <div
           class="text flex items-start justify-center flex-col min-h-fit w-full py-[20px] md:p-[20px] md:w-[40%]"
         >
-          <h1 class="font-AvertaCY text-[6vw] leading-none md:text-3xl xl:text-4xl">
+          <h1
+            class="font-AvertaCY text-[6vw] leading-none md:text-3xl xl:text-4xl"
+          >
             Albayan Online <br />
             Tutoring Academy
           </h1>
@@ -118,9 +120,11 @@
       <div
         class="section2 mt-[50px] h-fit w-full flex flex-wrap py-[20px] md:p-[20px] lg:grid lg:grid-cols-[40%,1fr]"
       >
-        <h3 class="font-AvertaCY text-[4.5vw] leading-none md:text-xl xl:text-2xl">
+        <h2
+          class="font-AvertaCY text-[4.5vw] leading-none md:text-xl xl:text-2xl"
+        >
           Who we are ?
-        </h3>
+        </h2>
         <p
           class="font-AvertaCY py-[3vw] text-sm leading-[130%] md:text-md md:py-[10px] xl:text-[16px]"
         >
@@ -136,12 +140,12 @@
       <div
         class="section3 mt-[50px] h-fit w-full grid flex-wrap py-[20px] md:p-[20px]"
       >
-        <h3 class="font-AvertaCY text-[4.5vw] leading-none md:text-xl xl:text-2xl py-[50px] text-center w-full">
-          Our study and teaching advantages
-        </h3>
-        <div
-          class="content h-fit w-full py-[3vw] md:py-[10px]"
+        <h2
+          class="font-AvertaCY text-[4.5vw] leading-none md:text-xl xl:text-2xl py-[50px] text-center w-full"
         >
+          Our study and teaching advantages
+        </h2>
+        <div class="content h-fit w-full py-[3vw] md:py-[10px]">
           <div class="card">
             <div class="image">
               <img src="../images/teachers.svg" alt="advantages" />
@@ -171,7 +175,9 @@
             </div>
             <div class="font-AvertaCY text">
               <p class="font-AvertaCY">One-on-One</p>
-              <p class="font-AvertaCY">Modern fun learning in One-on-One classes designed for kids</p>
+              <p class="font-AvertaCY">
+                Modern fun learning in One-on-One classes designed for kids
+              </p>
             </div>
           </div>
           <div class="card">
@@ -186,97 +192,110 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- section3 -->
 
-          <!-- <div
-            style="margin: 0 auto"
-            class="card border border-red-300 w-[200px] px-[20px] py-[25px] rounded-xl"
-          >
-            <div
-              class="image border border-black h-[100px] w-full overflow-hidden"
-            >
+      <div
+        class="section4 border border-black mt-[50px] h-fit w-full grid flex-wrap py-[20px] md:p-[20px]"
+      >
+        <h2
+          class="font-AvertaCY border border-black text-[4.5vw] leading-none md:text-xl xl:text-2xl py-[50px] text-center w-full"
+        >
+          Our studying Programs
+        </h2>
+        <div
+          class="content grid grid-cols-[1fr] sm:grid-cols-[1fr,1fr] lg:grid-cols-[1fr,1fr,1fr] border border-red-200"
+        >
+          <div class="card h-[250px] m-[10px] border border-green-200 cursor-pointer">
+            <div class="image h-[180px] w-full">
               <img
-                src="../images/teachers.svg"
-                alt="Our study and teaching advantages"
+                class="h-[180px] w-full object-cover object-top"
+                src="../images/khatma.avif"
+                alt="programs images"
               />
             </div>
-            <div class="text border border-orange-200">
-              <p class="text-sm leading-none text-center w-full py-[10px]">
-                Professional Teachers
-              </p>
-              <p class="text-[13px] text-center w-full">
-                Certified and Professional teachers (Ustadah) Hafiz with Ijaza
-              </p>
+            <div
+              class="text h-[70px] w-full py-[2px] px-[20px] flex items-start justify-center flex-col border border-blue-200"
+            >
+              <h3 class="font-AvertaCY text-md lg:text-xl">
+                Quran Hafiz Ijaza Program
+              </h3>
+              <p class="font-AvertaCY text-sm">Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-          <div
-            style="margin: 0 auto"
-            class="card border border-red-300 w-[200px] px-[20px] py-[25px] rounded-xl"
-          >
-            <div
-              class="image border border-black h-[100px] w-full overflow-hidden"
-            >
+          <div class="card h-[250px] m-[10px] border border-green-200 cursor-pointer">
+            <div class="image h-[180px] w-full">
               <img
-                src="../images/study-circle.svg"
-                alt="Our study and teaching advantages"
+                class="h-[180px] w-full object-cover object-top"
+                src="../images/khatma.avif"
+                alt="programs images"
               />
             </div>
-            <div class="text border border-orange-200">
-              <p class="text-sm leading-none text-center w-full py-[10px]">
-                Study Circle
-              </p>
-              <p class="text-[13px] text-center w-full">
-                Establish a weekly Quran study circle (Halaqah) with your family
-                and friends
-              </p>
+            <div
+              class="text h-[70px] w-full py-[2px] px-[20px] flex items-start justify-center flex-col border border-blue-200"
+            >
+              <h3 class="font-AvertaCY text-md lg:text-xl">
+                Quran Hafiz Ijaza Program
+              </h3>
+              <p class="font-AvertaCY text-sm">Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-          <div
-            style="margin: 0 auto"
-            class="card border border-red-300 w-[200px] px-[20px] py-[25px] rounded-xl"
-          >
-            <div
-              class="image border border-black h-[100px] w-full overflow-hidden"
-            >
+          <div class="card h-[250px] m-[10px] border border-green-200 cursor-pointer">
+            <div class="image h-[180px] w-full">
               <img
-                src="../images/one-on-one.svg"
-                alt="Our study and teaching advantages"
+                class="h-[180px] w-full object-cover object-top"
+                src="../images/khatma.avif"
+                alt="programs images"
               />
             </div>
-            <div class="text border border-orange-200">
-              <p class="text-sm leading-none text-center w-full py-[10px]">
-                One-on-One
-              </p>
-              <p class="text-[13px] text-center w-full">
-                Modern fun learning in One-on-One classes designed for kids
-              </p>
+            <div
+              class="text h-[70px] w-full py-[2px] px-[20px] flex items-start justify-center flex-col border border-blue-200"
+            >
+              <h3 class="font-AvertaCY text-md lg:text-xl">
+                Quran Hafiz Ijaza Program
+              </h3>
+              <p class="font-AvertaCY text-sm">Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-          <div
-            style="margin: 0 auto"
-            class="card border border-red-300 w-[200px] px-[20px] py-[25px] rounded-xl"
-          >
-            <div
-              class="image border border-black h-[100px] w-full overflow-hidden"
-            >
+          <div class="card h-[250px] m-[10px] border border-green-200 cursor-pointer">
+            <div class="image h-[180px] w-full">
               <img
-                src="../images/tutorials.svg"
-                alt="Our study and teaching advantages"
+                class="h-[180px] w-full object-cover object-top"
+                src="../images/khatma.avif"
+                alt="programs images"
               />
             </div>
-            <div class="text border border-orange-200">
-              <p class="text-sm leading-none text-center w-full py-[10px]">
-                Articles & Videos
-              </p>
-              <p class="text-[13px] text-center w-full">
-                Religious educational articles and video tutorials in Tawheed,
-                Fiqh and Aqeedah
-              </p>
+            <div
+              class="text h-[70px] w-full py-[2px] px-[20px] flex items-start justify-center flex-col border border-blue-200"
+            >
+              <h3 class="font-AvertaCY text-md lg:text-xl">
+                Quran Hafiz Ijaza Program
+              </h3>
+              <p class="font-AvertaCY text-sm">Lorem ipsum dolor sit amet.</p>
             </div>
-          </div> -->
+          </div>
+          <div class="card h-[250px] m-[10px] border border-green-200 cursor-pointer">
+            <div class="image h-[180px] w-full">
+              <img
+                class="h-[180px] w-full object-cover object-top"
+                src="../images/khatma.avif"
+                alt="programs images"
+              />
+            </div>
+            <div
+              class="text h-[70px] w-full py-[2px] px-[20px] flex items-start justify-center flex-col border border-blue-200"
+            >
+              <h3 class="font-AvertaCY text-md lg:text-xl">
+                Quran Hafiz Ijaza Program
+              </h3>
+              <p class="font-AvertaCY text-sm">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- section3 -->
+    <!-- section4 -->
     <!-- container -->
 
     <!-- script -->
