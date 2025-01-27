@@ -106,15 +106,15 @@ footer .content ul{
   margin: 0 auto;
 }
 
+@media screen and (min-width: 532px) {
+  footer .content{
+    width: 700px;
+  }
+}
 @media screen and (min-width: 768px) {
   .bgeffect.active {
     pointer-events: none;
     background: #0000;
     transition: 1s right cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-}
-@media screen and (min-width: 532px) {
-  footer .content{
-    width: 700px;
   }
 }

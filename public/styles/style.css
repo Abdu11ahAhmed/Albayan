@@ -632,6 +632,22 @@ video {
   top: 0px
 }
 
+.right-\[30px\]{
+  right: 30px
+}
+
+.right-\[10px\]{
+  right: 10px
+}
+
+.right-\[50px\]{
+  right: 50px
+}
+
+.right-\[5px\]{
+  right: 5px
+}
+
 .z-10{
   z-index: 10
 }
@@ -758,8 +774,8 @@ video {
   max-height: fit-content
 }
 
-.min-h-\[250px\]{
-  min-height: 250px
+.min-h-\[260px\]{
+  min-height: 260px
 }
 
 .min-h-\[70px\]{
@@ -773,14 +789,6 @@ video {
 .min-h-fit{
   min-height: -moz-fit-content;
   min-height: fit-content
-}
-
-.min-h-\[260px\]{
-  min-height: 260px
-}
-
-.min-h-\[270px\]{
-  min-height: 270px
 }
 
 .w-\[120px\]{
@@ -918,6 +926,15 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
 }
 
+.bg-inherit{
+  background-color: inherit
+}
+
+.bg-slate-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1))
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover
@@ -972,17 +989,12 @@ video {
   padding-bottom: 7px
 }
 
-.py-\[5px\]{
-  padding-top: 5px;
+.pb-\[5px\]{
   padding-bottom: 5px
 }
 
 .pl-\[20vw\]{
   padding-left: 20vw
-}
-
-.pb-\[5px\]{
-  padding-bottom: 5px
 }
 
 .text-center{
@@ -1174,6 +1186,12 @@ footer .content ul{
   margin: 0 auto;
 }
 
+@media screen and (min-width: 532px) {
+  footer .content{
+    width: 700px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .bgeffect.active {
     pointer-events: none;
@@ -1182,16 +1200,15 @@ footer .content ul{
   }
 }
 
-@media screen and (min-width: 532px) {
-  footer .content{
-    width: 700px;
-  }
-}
-
 .before\:my-\[2px\]::before{
   content: var(--tw-content);
   margin-top: 2px;
   margin-bottom: 2px
+}
+
+.before\:hidden::before{
+  content: var(--tw-content);
+  display: none
 }
 
 .before\:h-\[2px\]::before{
@@ -1214,6 +1231,11 @@ footer .content ul{
   content: var(--tw-content);
   margin-top: 2px;
   margin-bottom: 2px
+}
+
+.after\:hidden::after{
+  content: var(--tw-content);
+  display: none
 }
 
 .after\:h-\[2px\]::after{
@@ -1246,6 +1268,10 @@ footer .content ul{
     right: 0px
   }
 
+  .sm\:-right-\[30px\]{
+    right: -30px
+  }
+
   .sm\:grid{
     display: grid
   }
@@ -1256,6 +1282,10 @@ footer .content ul{
 
   .sm\:h-full{
     height: 100%
+  }
+
+  .sm\:h-\[70px\]{
+    height: 70px
   }
 
   .sm\:min-h-\[180px\]{
@@ -1270,6 +1300,10 @@ footer .content ul{
     width: 540px
   }
 
+  .sm\:w-\[70px\]{
+    width: 70px
+  }
+
   .sm\:grid-cols-\[140px\2c 1fr\]{
     grid-template-columns: 140px 1fr
   }
@@ -1280,6 +1314,11 @@ footer .content ul{
 
   .sm\:justify-start{
     justify-content: flex-start
+  }
+
+  .sm\:bg-\[\#f5eff6\]{
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 239 246 / var(--tw-bg-opacity, 1))
   }
 
   .sm\:p-\[20px\]{
@@ -1294,6 +1333,16 @@ footer .content ul{
   .sm\:py-\[10px\]{
     padding-top: 10px;
     padding-bottom: 10px
+  }
+
+  .sm\:before\:flex::before{
+    content: var(--tw-content);
+    display: flex
+  }
+
+  .sm\:after\:flex::after{
+    content: var(--tw-content);
+    display: flex
   }
 }
 
@@ -1319,6 +1368,14 @@ footer .content ul{
     height: fit-content
   }
 
+  .md\:h-\[\]{
+    height: 
+  }
+
+  .md\:h-\[70px\]{
+    height: 70px
+  }
+
   .md\:w-\[40\%\]{
     width: 40%
   }
@@ -1334,6 +1391,14 @@ footer .content ul{
   .md\:w-fit{
     width: -moz-fit-content;
     width: fit-content
+  }
+
+  .md\:w-\[\]{
+    width: 
+  }
+
+  .md\:w-\[70px\]{
+    width: 70px
   }
 
   .md\:flex-row{
