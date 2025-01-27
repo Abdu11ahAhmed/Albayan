@@ -616,10 +616,6 @@ video {
   position: relative
 }
 
-.-right-\[30px\]{
-  right: -30px
-}
-
 .left-0{
   left: 0px
 }
@@ -628,24 +624,12 @@ video {
   right: -100%
 }
 
-.top-0{
-  top: 0px
-}
-
-.right-\[30px\]{
-  right: 30px
-}
-
-.right-\[10px\]{
-  right: 10px
-}
-
-.right-\[50px\]{
-  right: 50px
-}
-
 .right-\[5px\]{
   right: 5px
+}
+
+.top-0{
+  top: 0px
 }
 
 .z-10{
@@ -829,6 +813,10 @@ video {
   flex-direction: column
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse
+}
+
 .flex-wrap{
   flex-wrap: wrap
 }
@@ -839,6 +827,10 @@ video {
 
 .items-center{
   align-items: center
+}
+
+.justify-start{
+  justify-content: flex-start
 }
 
 .justify-center{
@@ -924,15 +916,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
-}
-
-.bg-inherit{
-  background-color: inherit
-}
-
-.bg-slate-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1))
 }
 
 .object-cover{
@@ -1268,10 +1251,6 @@ footer .content ul{
     right: 0px
   }
 
-  .sm\:-right-\[30px\]{
-    right: -30px
-  }
-
   .sm\:grid{
     display: grid
   }
@@ -1284,10 +1263,6 @@ footer .content ul{
     height: 100%
   }
 
-  .sm\:h-\[70px\]{
-    height: 70px
-  }
-
   .sm\:min-h-\[180px\]{
     min-height: 180px
   }
@@ -1298,10 +1273,6 @@ footer .content ul{
 
   .sm\:w-\[540px\]{
     width: 540px
-  }
-
-  .sm\:w-\[70px\]{
-    width: 70px
   }
 
   .sm\:grid-cols-\[140px\2c 1fr\]{
@@ -1363,17 +1334,13 @@ footer .content ul{
     display: none
   }
 
+  .md\:h-\[70px\]{
+    height: 70px
+  }
+
   .md\:h-fit{
     height: -moz-fit-content;
     height: fit-content
-  }
-
-  .md\:h-\[\]{
-    height: 
-  }
-
-  .md\:h-\[70px\]{
-    height: 70px
   }
 
   .md\:w-\[40\%\]{
@@ -1388,17 +1355,17 @@ footer .content ul{
     width: 600px
   }
 
+  .md\:w-\[70px\]{
+    width: 70px
+  }
+
   .md\:w-fit{
     width: -moz-fit-content;
     width: fit-content
   }
 
-  .md\:w-\[\]{
-    width: 
-  }
-
-  .md\:w-\[70px\]{
-    width: 70px
+  .md\:w-\[50\%\]{
+    width: 50%
   }
 
   .md\:flex-row{
@@ -1411,6 +1378,10 @@ footer .content ul{
 
   .md\:items-center{
     align-items: center
+  }
+
+  .md\:justify-start{
+    justify-content: flex-start
   }
 
   .md\:p-\[20px\]{
@@ -1452,6 +1423,10 @@ footer .content ul{
 }
 
 @media (min-width: 1024px){
+  .lg\:flex{
+    display: flex
+  }
+
   .lg\:grid{
     display: grid
   }
@@ -1474,6 +1449,10 @@ footer .content ul{
 
   .lg\:grid-cols-\[40\%\2c 1fr\]{
     grid-template-columns: 40% 1fr
+  }
+
+  .lg\:flex-col{
+    flex-direction: column
   }
 
   .lg\:text-xl{
