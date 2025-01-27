@@ -23,7 +23,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        AvertaCY: ["Averta"],
+        AvertaCY: ["AvertaCY"],
       },
     },
   },

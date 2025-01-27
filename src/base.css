@@ -1,11 +1,8 @@
-@import url("https://db.onlinewebfonts.com/c/f036e81e6040acc6b43aabc036862d21?family=Averta");
-/* @font-face {
-  font-family: "Averta CY";
-  src: url("../public/fonts/AvertaRegular.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-} */
+
+@font-face{
+  font-family: "AvertaCY";
+  src: url(../fonts/AvertaRegular.ttf)
+}
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +16,7 @@
   list-style: none;
   text-decoration: none;
   text-transform: capitalize;
-  font-family: "Averta CY";
+  font-family: "AvertaCY";
 }
 :root {
   --background-color: #ffffff;
@@ -78,6 +75,37 @@ a {
   background: #00000041;
   transition: 1s right cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.section6 .content{
+  position: relative;
+}
+.section6 .content::before{
+  content: url("../images/before&after.svg");
+  position: absolute;
+  top: -100px;
+  right: 50px;
+  height: 100px;
+  width: auto;
+  opacity: 0.2;
+}
+.section6 .content::after{
+  content: url("../images/before&after.svg");
+  position: absolute;
+  bottom: -100px;
+  left: 50px;
+  height: 100px;
+  width: auto;
+  transform: rotateZ(180deg);
+  opacity: 0.2;
+}
+
+footer .content{
+  margin: 0 auto;
+}
+footer .content ul{
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
   .bgeffect.active {
     pointer-events: none;
@@ -85,93 +113,8 @@ a {
     transition: 1s right cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
-
-.section3 .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.section3 .content .card {
-  height: 245px;
-  width: 215px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-.section3 .content .card:nth-child(1) {
-  border: 1px solid #a262a831;
-}
-.section3 .content .card .image {
-  height: 120px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section3 .content .card .image img {
-  height: 100px;
-  width: 100%;
-}
-.section3 .content .card .text {
-  height: 105px;
-  width: 100%;
-  padding: 10px 0;
-}
-.section3 .content .card .text p {
-  font-size: 14px;
-  text-align: center;
-  width: 100%;
-  padding-bottom: 5px;
-}
-.section3 .content .card .text p:nth-child(1) {
-  font-weight: bolder;
-  letter-spacing: -0.05em;
-}
-@media screen and (max-width: 532px) {
-  .section3 .content {
-    grid-template-columns: 1fr;
-  }
-  .section3 .content .card {
-    margin: 10px auto;
-  }
-}
 @media screen and (min-width: 532px) {
-  .section3 .content {
-    grid-template-columns: 1fr 1fr;
-    width: 472px;
-    margin: 0 auto;
-  }
-  .section3 .content .card {
-    margin: 10px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .section3 .content {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 943px;
-  }
-}
-@media screen and (min-width: 1564px) {
-  .section3 .content {
-    width: 1050px;
-  }
-  .section3 .content .card {
-    height: 300px;
-    width: unset;
-  }
-  .section3 .content .card .image {
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section3 .content .card .image img {
-    height: 110px;
-  }
-  .section3 .content .card .text {
-    height: 130px;
-  }
-  .section3 .content .card .text p:nth-child(1) {
-    font-size: 16px;
+  footer .content{
+    width: 700px;
   }
 }
