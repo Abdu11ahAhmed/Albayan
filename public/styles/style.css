@@ -749,6 +749,26 @@ video {
   height: 100vh
 }
 
+.h-\[\]{
+  height: 
+}
+
+.h-\[calc\]{
+  height: calc
+}
+
+.h-\[calc\(\)\]{
+  height: calc()
+}
+
+.h-\[calc\(100vh\)\]{
+  height: calc(100vh)
+}
+
+.h-\[calc\(100vh-600px\)\]{
+  height: calc(100vh - 600px)
+}
+
 .max-h-\[8\.5vh\]{
   max-height: 8.5vh
 }
@@ -827,10 +847,6 @@ video {
 
 .items-center{
   align-items: center
-}
-
-.justify-start{
-  justify-content: flex-start
 }
 
 .justify-center{
@@ -1065,6 +1081,7 @@ video {
   text-decoration: none;
   text-transform: capitalize;
   font-family: "AvertaCY";
+  background: unset;
 }
 
 :root {
@@ -1094,6 +1111,31 @@ p,
 b,
 a {
   letter-spacing: 0em;
+}
+
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  height: 20%;
+  width: 20%;
+  filter: blur(800px);
+  z-index: -1;
+}
+
+body::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: orange;
+  height: 20%;
+  width: 20%;
+  filter: blur(800px);
+  z-index: -1;
 }
 
 /* base */
@@ -1275,6 +1317,10 @@ footer .content ul{
     width: 540px
   }
 
+  .sm\:w-\[400px\]{
+    width: 400px
+  }
+
   .sm\:grid-cols-\[140px\2c 1fr\]{
     grid-template-columns: 140px 1fr
   }
@@ -1347,6 +1393,10 @@ footer .content ul{
     width: 40%
   }
 
+  .md\:w-\[50\%\]{
+    width: 50%
+  }
+
   .md\:w-\[60\%\]{
     width: 60%
   }
@@ -1364,10 +1414,6 @@ footer .content ul{
     width: fit-content
   }
 
-  .md\:w-\[50\%\]{
-    width: 50%
-  }
-
   .md\:flex-row{
     flex-direction: row
   }
@@ -1382,6 +1428,10 @@ footer .content ul{
 
   .md\:justify-start{
     justify-content: flex-start
+  }
+
+  .md\:bg-transparent{
+    background-color: transparent
   }
 
   .md\:p-\[20px\]{
@@ -1423,10 +1473,6 @@ footer .content ul{
 }
 
 @media (min-width: 1024px){
-  .lg\:flex{
-    display: flex
-  }
-
   .lg\:grid{
     display: grid
   }
@@ -1449,10 +1495,6 @@ footer .content ul{
 
   .lg\:grid-cols-\[40\%\2c 1fr\]{
     grid-template-columns: 40% 1fr
-  }
-
-  .lg\:flex-col{
-    flex-direction: column
   }
 
   .lg\:text-xl{

@@ -17,6 +17,7 @@
   text-decoration: none;
   text-transform: capitalize;
   font-family: "AvertaCY";
+  background: unset;
 }
 :root {
   --background-color: #ffffff;
@@ -41,6 +42,30 @@ p,
 b,
 a {
   letter-spacing: 0em;
+}
+
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  height: 20%;
+  width: 20%;
+  filter: blur(800px);
+  z-index: -1;
+}
+body::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: orange;
+  height: 20%;
+  width: 20%;
+  filter: blur(800px);
+  z-index: -1;
 }
 /* base */
 
