@@ -636,6 +636,10 @@ video {
   z-index: 10
 }
 
+.z-20{
+  z-index: 20
+}
+
 .m-\[10px\]{
   margin: 10px
 }
@@ -732,6 +736,10 @@ video {
   height: 80px
 }
 
+.h-\[calc\(100vh-600px\)\]{
+  height: calc(100vh - 600px)
+}
+
 .h-\[fit\]{
   height: fit
 }
@@ -749,24 +757,12 @@ video {
   height: 100vh
 }
 
-.h-\[\]{
-  height: 
+.h-\[600\]{
+  height: 600
 }
 
-.h-\[calc\]{
-  height: calc
-}
-
-.h-\[calc\(\)\]{
-  height: calc()
-}
-
-.h-\[calc\(100vh\)\]{
-  height: calc(100vh)
-}
-
-.h-\[calc\(100vh-600px\)\]{
-  height: calc(100vh - 600px)
+.h-\[600px\]{
+  height: 600px
 }
 
 .max-h-\[8\.5vh\]{
@@ -793,6 +789,14 @@ video {
 .min-h-fit{
   min-height: -moz-fit-content;
   min-height: fit-content
+}
+
+.min-h-\[400px\]{
+  min-height: 400px
+}
+
+.min-h-\[calc\(100vh-600px\)\]{
+  min-height: calc(100vh - 600px)
 }
 
 .w-\[120px\]{
@@ -932,6 +936,11 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+}
+
+.bg-red-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 10 10 / var(--tw-bg-opacity, 1))
 }
 
 .object-cover{
@@ -1225,6 +1234,16 @@ footer .content ul{
   }
 }
 
+.before\:z-0::before{
+  content: var(--tw-content);
+  z-index: 0
+}
+
+.before\:-z-10::before{
+  content: var(--tw-content);
+  z-index: -10
+}
+
 .before\:my-\[2px\]::before{
   content: var(--tw-content);
   margin-top: 2px;
@@ -1250,6 +1269,16 @@ footer .content ul{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1))
+}
+
+.after\:z-0::after{
+  content: var(--tw-content);
+  z-index: 0
+}
+
+.after\:-z-10::after{
+  content: var(--tw-content);
+  z-index: -10
 }
 
 .after\:my-\[2px\]::after{
@@ -1313,12 +1342,12 @@ footer .content ul{
     width: 300px
   }
 
-  .sm\:w-\[540px\]{
-    width: 540px
-  }
-
   .sm\:w-\[400px\]{
     width: 400px
+  }
+
+  .sm\:w-\[540px\]{
+    width: 540px
   }
 
   .sm\:grid-cols-\[140px\2c 1fr\]{
@@ -1387,6 +1416,26 @@ footer .content ul{
   .md\:h-fit{
     height: -moz-fit-content;
     height: fit-content
+  }
+
+  .md\:h-\[\]{
+    height: 
+  }
+
+  .md\:h-\[calc\(\)\]{
+    height: calc()
+  }
+
+  .md\:h-\[calc\(100\)\]{
+    height: calc(100)
+  }
+
+  .md\:h-\[calc\(100vh-60px\)\]{
+    height: calc(100vh - 60px)
+  }
+
+  .md\:h-\[calc\(100vh-600px\)\]{
+    height: calc(100vh - 600px)
   }
 
   .md\:w-\[40\%\]{
