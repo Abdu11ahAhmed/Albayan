@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Albayan Academy Learning Quraan, Arabic, Tafser, Tajweed, Khatma and Ejaza"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- styles -->
+    <title>Albayan Academy | Login</title>
+  </head>
+  <style>
+    body {
+      background-image: url("../images/login.avif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+  <body class="overflow-x-hidden before:hidden after:hidden">
+    <!-- navbar -->
+    <nav
+      class="absolute top-0 left-0 flex items-center justify-between px-[20px] xl:px-[40px] 2xl:px-[100px] max-h-[8.5vh] h-[8.5vh] w-full overflow-hidden"
+    >
+      <div class="bgeffect absolute top-0 left-0 h-screen w-full"></div>
+      <a
+        class="h-fit max-h-fit overflow-hidden flex justify-center items-center"
+        href="./index.html"
+      >
+        <img
+          height="100%"
+          width="120px"
+          class="h-[fit] w-[120px] lg:w-[150px]"
+          src="../images/logo.svg"
+          alt="logo"
+        />
+      </a>
+    </nav>
+    <!-- navbar -->
+
+    <!-- container -->
+    <div class="container h-screen px-[20px] xl:px-[40px] 2xl:px-[20px]">
+      <form
+        class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-120%] backdrop-blur-sm flex flex-col justify-center items-start h-fit w-fit border border-red-300 py-[50px] px-[20px] bg-white bg-opacity-30"
+      >
+        <h3 class="text-center w-full text-xl pb-[20px]">Login</h3>
+        <label for="email" class="text-sm">Enter Email:</label>
+        <input
+          type="email"
+          class="border border-gray-300 outline-none bg-transparent h-[40px] w-[270px] px-[20px] lowercase text-sm"
+          id="email"
+          name="email"
+          placeholder="Please enter you email"
+        />
+        <label
+          for="emailerr"
+          id="emailerr"
+          class="text-red-700 text-sm mb-[5px]"
+          >email error message</label
+        >
+        <label for="password" class="text-sm">Enter Password:</label>
+        <input
+          type="password"
+          class="border border-gray-300 outline-none bg-transparent h-[40px] w-[270px] px-[20px] lowercase text-sm"
+          id="password"
+          name="password"
+          placeholder="Please enter you password"
+        />
+        <label
+          for="passworderr"
+          id="passworderr"
+          class="text-red-700 text-sm mb-[5px]"
+          >password error message</label
+        >
+        <button
+          class="border outline-none bg-[var(--accent-color)] text-white h-[40px] w-[270px] px-[20px] lowercase text-sm pointer"
+          type="submit"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+
+    <!-- script -->
+    <script>
+      let emailerr = document.getElementById("emailerr");
+      let passworderr = document.getElementById("passworderr");
+      emailerr.style.color = "#0000";
+      passworderr.style.color = "#0000";
+
+      let email = document.getElementById("email");
+      let password = document.getElementById("password");
+      let login = document.querySelector("button");
+
+      login.addEventListener("click", (e) => {
+        let validInput = false;
+        if (email.value === "" || password.value === "") {
+          emailerr.style.color = "#f00";
+          emailerr.textContent = "Email is required";
+          passworderr.style.color = "#f00";
+          passworderr.textContent = "Password is required";
+        } else {
+          emailerr.style.color = "#0000";
+          validInput = true;
+        }
+
+        if (validInput === false) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    <!-- script -->
+  </body>
+</html>
