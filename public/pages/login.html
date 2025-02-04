@@ -55,10 +55,7 @@
           name="email"
           placeholder="Please enter you email"
         />
-        <label
-          for="emailerr"
-          id="emailerr"
-          class="text-red-700 text-sm mb-[5px]"
+        <label for="emailerr" id="emailerr" class="text-red-700 text-sm"
           >email error message</label
         >
         <label for="password" class="text-sm">Enter Password:</label>
@@ -69,18 +66,20 @@
           name="password"
           placeholder="Please enter you password"
         />
-        <label
-          for="passworderr"
-          id="passworderr"
-          class="text-red-700 text-sm mb-[5px]"
+        <label for="passworderr" id="passworderr" class="text-red-700 text-sm"
           >password error message</label
         >
         <button
-          class="border outline-none bg-[var(--accent-color)] text-white h-[40px] w-[270px] px-[20px] lowercase text-sm pointer"
+          class="border outline-none bg-[var(--accent-color)] text-white h-[40px] w-[270px] px-[20px] lowercase text-sm pointer mt-3"
           type="submit"
         >
           Login
         </button>
+        <a
+          href="./createAccount.html"
+          class="text-sm py-2 text-center w-full underline"
+          >Dont have account! create one</a
+        >
       </form>
     </div>
 
@@ -88,8 +87,8 @@
     <script>
       let emailerr = document.getElementById("emailerr");
       let passworderr = document.getElementById("passworderr");
-      emailerr.style.color = "#0000";
-      passworderr.style.color = "#0000";
+      emailerr.style.display = "none";
+      passworderr.style.display = "none";
 
       let email = document.getElementById("email");
       let password = document.getElementById("password");
@@ -98,12 +97,12 @@
       login.addEventListener("click", (e) => {
         let validInput = false;
         if (email.value === "" || password.value === "") {
-          emailerr.style.color = "#f00";
+          emailerr.style.display = "flex";
           emailerr.textContent = "Email is required";
-          passworderr.style.color = "#f00";
+          passworderr.style.display = "flex";
           passworderr.textContent = "Password is required";
         } else {
-          emailerr.style.color = "#0000";
+          emailerr.style.display = "none";
           validInput = true;
         }
 
